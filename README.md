@@ -19,3 +19,7 @@ kubectl get po -w
 brew install jmeter
 
 jmeter -t -n test/Concurrent100-10min-QueryCodeType.jmx
+
+git clone https://github.com/kubernetes-incubator/metrics-server.git
+
+kubectl apply -f metrics-server/deploy/1.8+/
